@@ -1,100 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EcoBag+ — Descontos ao reutilizar embalagens</title>
-  <meta name="description" content="Ganhe descontos ao devolver e reutilizar embalagens nos mercados parceiros. Cadastre-se para o piloto EcoBag+." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoBag+ — Validação de Interesse</title>
+  <meta name="description" content="Queremos saber sua opinião sobre o EcoBag+, um programa de descontos por reutilização de embalagens. Participe e ajude a validar a ideia.">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">EcoBag<span>+</span></div>
-      <nav class="nav-links">
-        <a href="#beneficios">Benefícios</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#faq">FAQ</a>
-        <a href="#cadastro" class="btn btn-small">Quero participar</a>
+  <header class="topbar">
+    <div class="wrap">
+      <strong class="brand">EcoBag+</strong>
+      <nav class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#formulario" class="btn">Responder</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Ganhe descontos reais ao <span class="grad">reutilizar embalagens</span></h1>
-        <p class="sub">
-          Cadastre-se para participar do piloto do <strong>EcoBag+</strong>.
-          Devolva suas embalagens nos mercados parceiros, acumule pontos e troque por descontos.
+  <main>
+    <section id="sobre" class="hero">
+      <div class="wrap">
+        <h1>Ajude a validar o <span class="mark">EcoBag+</span></h1>
+        <p>
+          Estamos testando uma ideia simples: <strong>dar desconto a quem devolver embalagens limpas nos mercados parceiros</strong>.
+          Sua resposta ajuda a entender se essa proposta faz sentido para você e para o meio ambiente. 🌱
         </p>
-        <div class="cta-row">
-          <a href="#cadastro" class="btn">Quero participar</a>
-          <a href="#cadastro" class="btn btn-outline">Sou supermercado parceiro</a>
-        </div>
-        <ul class="badges">
-          <li>♻️ Menos lixo</li>
-          <li>💸 Descontos imediatos</li>
-          <li>📱 App & suporte digital</li>
+        <a href="#formulario" class="btn">Responder pesquisa</a>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section alt">
+      <div class="wrap">
+        <h2>Por que validar?</h2>
+        <ul class="list">
+          <li>💸 Confirmar se o público se interessa por recompensas sustentáveis</li>
+          <li>♻️ Ver se as pessoas já reutilizam embalagens</li>
+          <li>🛒 Entender o comportamento de compra nos supermercados</li>
         </ul>
       </div>
-      <div class="card stats">
-        <div class="stat">
-          <strong>3 passos</strong>
-          <span>cadastro • devolução • desconto</span>
-        </div>
-        <div class="stat">
-          <strong>Impacto positivo</strong>
-          <span>cada embalagem conta</span>
-        </div>
-        <div class="stat">
-          <strong>Gratuito</strong>
-          <span>para consumidores no piloto</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="cadastro" class="section">
-    <div class="container">
-      <h2>Cadastre-se no piloto</h2>
-      <p class="sub center">Escolha uma opção abaixo e preencha o formulário.</p>
-      <div class="form-embed">
-        <iframe id="iframeForm"
-                title="Formulário EcoBag+"
-                src="about:blank"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0">Carregando…</iframe>
+    <section id="formulario" class="section">
+      <div class="wrap">
+        <h2>Pesquisa de validação</h2>
+        <p>Responda abaixo (leva menos de 1 minuto):</p>
+
+        <!-- Substitua este link pelo código de incorporação do Microsoft Forms -->
+        <iframe 
+          title="Formulário EcoBag+"
+          class="form-embed"
+          src="https://forms.office.com/Pages/ResponsePage.aspx?id=SEU_ID_DO_FORM&embed=true"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+
+        <p class="small">
+          Dica: adicione <code>?utm_source=whatsapp&utm_campaign=validacao</code> ao link ao compartilhar
+          para medir a origem das respostas.
+        </p>
       </div>
-      <p class="hint">
-        Dica: use <code>?utm_source=whatsapp&utm_campaign=piloto</code> no link desta página para medir a origem dos cadastros.
-      </p>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>© EcoBag+ • Projeto acadêmico • LGPD: uso restrito à operação do piloto</div>
-      <div class="small">Entre em contato: <a href="mailto:contato@ecobag.plus">contato@ecobag.plus</a></div>
+    <div class="wrap">
+      <p>© EcoBag+ — Projeto acadêmico para validação de MVP.</p>
+      <p class="small">
+        Equipe: Bruno Cristiano Corrieire Chagas (10376496), Nome B, Nome C
+      </p>
     </div>
   </footer>
-
-  <script>
-    const urls = {
-      consumidor: "https://forms.office.com/pages/responsepage.aspx?id=QJTaUV5Os0eOXEgX9vQ8BGo17MvgzSxBtBiJI3Bg0UBUOTlWTUxFRzYyNDZTTkRDMUgzV0NCUEJITi4u&route=shorturl",
-    };
-    function trocarForm(tipo) {
-      const iframe = document.getElementById('iframeForm');
-      const tabs = document.querySelectorAll('.tab');
-      tabs.forEach(t => t.classList.remove('active'));
-      if (tipo === 'consumidor') { tabs[0].classList.add('active'); }
-      iframe.src = urls[tipo] || "about:blank";
-    }
-    trocarForm('consumidor');
-  </script>
 </body>
 </html>
