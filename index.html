@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoBag+ — Descontos ao reutilizar embalagens</title>
+  <meta name="description" content="Ganhe descontos ao devolver e reutilizar embalagens nos mercados parceiros. Cadastre-se para o piloto EcoBag+." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">EcoBag<span>+</span></div>
+      <nav class="nav-links">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cadastro" class="btn btn-small">Quero participar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Ganhe descontos reais ao <span class="grad">reutilizar embalagens</span></h1>
+        <p class="sub">
+          Cadastre-se para participar do piloto do <strong>EcoBag+</strong>.
+          Devolva suas embalagens nos mercados parceiros, acumule pontos e troque por descontos.
+        </p>
+        <div class="cta-row">
+          <a href="#cadastro" class="btn">Quero participar</a>
+          <a href="#cadastro" class="btn btn-outline">Sou supermercado parceiro</a>
+        </div>
+        <ul class="badges">
+          <li>♻️ Menos lixo</li>
+          <li>💸 Descontos imediatos</li>
+          <li>📱 App & suporte digital</li>
+        </ul>
+      </div>
+      <div class="card stats">
+        <div class="stat">
+          <strong>3 passos</strong>
+          <span>cadastro • devolução • desconto</span>
+        </div>
+        <div class="stat">
+          <strong>Impacto positivo</strong>
+          <span>cada embalagem conta</span>
+        </div>
+        <div class="stat">
+          <strong>Gratuito</strong>
+          <span>para consumidores no piloto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="section">
+    <div class="container">
+      <h2>Por que usar o EcoBag+</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Descontos e recompensas</h3>
+          <p>Junte pontos a cada embalagem retornada e troque por descontos na hora do caixa.</p>
+        </div>
+        <div class="card">
+          <h3>Sustentabilidade fácil</h3>
+          <p>Uma rotina simples que reduz o volume de lixo e incentiva a reutilização.</p>
+        </div>
+        <div class="card">
+          <h3>Parcerias locais</h3>
+          <p>Supermercados e lojas da sua região prontos para receber suas embalagens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section alt">
+    <div class="container">
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li><span>1</span> Faça seu cadastro e receba seu ID EcoBag+.</li>
+        <li><span>2</span> Devolva suas embalagens limpas nos pontos parceiros.</li>
+        <li><span>3</span> Ganhe pontos e troque por <strong>descontos</strong> no mercado.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="cadastro" class="section">
+    <div class="container">
+      <h2>Cadastre-se no piloto</h2>
+      <p class="sub center">Escolha uma opção abaixo e preencha o formulário.</p>
+      <div class="tabs">
+        <button class="tab active" onclick="trocarForm('consumidor')">Sou Consumidor</button>
+        <button class="tab" onclick="trocarForm('supermercado')">Sou Supermercado</button>
+      </div>
+      <div class="form-embed">
+        <!-- Substitua os links abaixo pelos links de incorporação (embed) do seu Google Forms -->
+        <iframe id="iframeForm"
+                title="Formulário EcoBag+"
+                src="about:blank"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">Carregando…</iframe>
+      </div>
+      <p class="hint">
+        Dica: use <code>?utm_source=whatsapp&utm_campaign=piloto</code> no link desta página para medir a origem dos cadastros.
+      </p>
+    </div>
+  </section>
+
+  <section id="faq" class="section alt">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Preciso pagar para participar?</summary>
+          <p>Não. O piloto é gratuito para consumidores. Supermercados parceiros têm condições especiais.</p>
+        </details>
+        <details>
+          <summary>Que tipos de embalagem valem pontos?</summary>
+          <p>Embalagens plásticas, vidro e papelão limpos. A lista exata será informada no ponto parceiro.</p>
+        </details>
+        <details>
+          <summary>Como recebo meus descontos?</summary>
+          <p>Os pontos aparecem no seu ID EcoBag+ e podem ser convertidos em desconto no caixa dos parceiros.</p>
+        </details>
+        <details>
+          <summary>Onde ficam os pontos de devolução?</summary>
+          <p>Ao concluir o cadastro você receberá um mapa com os pontos mais próximos.</p>
+        </details>
+        <details>
+          <summary>Como meus dados são tratados?</summary>
+          <p>Seguimos a LGPD. Seus dados serão usados apenas para contato e operação do piloto.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© EcoBag+ • Projeto acadêmico • LGPD: uso restrito à operação do piloto</div>
+      <div class="small">Entre em contato: <a href="mailto:contato@ecobag.plus">contato@ecobag.plus</a></div>
+    </div>
+  </footer>
+
+  <script>
+    const urls = {
+      consumidor: "https://docs.google.com/forms/d/e/SEU_ID_FORM_CONSUMIDOR/viewform?embedded=true",
+      supermercado: "https://docs.google.com/forms/d/e/SEU_ID_FORM_SUPERMERCADO/viewform?embedded=true"
+    };
+    function trocarForm(tipo) {
+      const iframe = document.getElementById('iframeForm');
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      if (tipo === 'consumidor') { tabs[0].classList.add('active'); }
+      if (tipo === 'supermercado') { tabs[1].classList.add('active'); }
+      iframe.src = urls[tipo] || "about:blank";
+    }
+    // carrega padrão
+    trocarForm('consumidor');
+  </script>
+</body>
+</html>
