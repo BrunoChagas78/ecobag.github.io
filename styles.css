@@ -5,7 +5,7 @@
   --line: #e5e7eb;
   --brand: #16a34a;
 }
-
+ 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
