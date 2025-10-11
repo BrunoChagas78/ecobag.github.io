@@ -58,47 +58,11 @@
     </div>
   </section>
 
-  <section id="beneficios" class="section">
-    <div class="container">
-      <h2>Por que usar o EcoBag+</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Descontos e recompensas</h3>
-          <p>Junte pontos a cada embalagem retornada e troque por descontos na hora do caixa.</p>
-        </div>
-        <div class="card">
-          <h3>Sustentabilidade fácil</h3>
-          <p>Uma rotina simples que reduz o volume de lixo e incentiva a reutilização.</p>
-        </div>
-        <div class="card">
-          <h3>Parcerias locais</h3>
-          <p>Supermercados e lojas da sua região prontos para receber suas embalagens.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="como-funciona" class="section alt">
-    <div class="container">
-      <h2>Como funciona</h2>
-      <ol class="steps">
-        <li><span>1</span> Faça seu cadastro e receba seu ID EcoBag+.</li>
-        <li><span>2</span> Devolva suas embalagens limpas nos pontos parceiros.</li>
-        <li><span>3</span> Ganhe pontos e troque por <strong>descontos</strong> no mercado.</li>
-      </ol>
-    </div>
-  </section>
-
   <section id="cadastro" class="section">
     <div class="container">
       <h2>Cadastre-se no piloto</h2>
       <p class="sub center">Escolha uma opção abaixo e preencha o formulário.</p>
-      <div class="tabs">
-        <button class="tab active" onclick="trocarForm('consumidor')">Sou Consumidor</button>
-        <button class="tab" onclick="trocarForm('supermercado')">Sou Supermercado</button>
-      </div>
       <div class="form-embed">
-        <!-- Substitua os links abaixo pelos links de incorporação (embed) do seu Google Forms -->
         <iframe id="iframeForm"
                 title="Formulário EcoBag+"
                 src="about:blank"
@@ -112,34 +76,6 @@
     </div>
   </section>
 
-  <section id="faq" class="section alt">
-    <div class="container">
-      <h2>Perguntas frequentes</h2>
-      <div class="faq">
-        <details>
-          <summary>Preciso pagar para participar?</summary>
-          <p>Não. O piloto é gratuito para consumidores. Supermercados parceiros têm condições especiais.</p>
-        </details>
-        <details>
-          <summary>Que tipos de embalagem valem pontos?</summary>
-          <p>Embalagens plásticas, vidro e papelão limpos. A lista exata será informada no ponto parceiro.</p>
-        </details>
-        <details>
-          <summary>Como recebo meus descontos?</summary>
-          <p>Os pontos aparecem no seu ID EcoBag+ e podem ser convertidos em desconto no caixa dos parceiros.</p>
-        </details>
-        <details>
-          <summary>Onde ficam os pontos de devolução?</summary>
-          <p>Ao concluir o cadastro você receberá um mapa com os pontos mais próximos.</p>
-        </details>
-        <details>
-          <summary>Como meus dados são tratados?</summary>
-          <p>Seguimos a LGPD. Seus dados serão usados apenas para contato e operação do piloto.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container footer-inner">
       <div>© EcoBag+ • Projeto acadêmico • LGPD: uso restrito à operação do piloto</div>
@@ -149,18 +85,15 @@
 
   <script>
     const urls = {
-      consumidor: "https://docs.google.com/forms/d/e/SEU_ID_FORM_CONSUMIDOR/viewform?embedded=true",
-      supermercado: "https://docs.google.com/forms/d/e/SEU_ID_FORM_SUPERMERCADO/viewform?embedded=true"
+      consumidor: "https://forms.office.com/pages/responsepage.aspx?id=QJTaUV5Os0eOXEgX9vQ8BGo17MvgzSxBtBiJI3Bg0UBUOTlWTUxFRzYyNDZTTkRDMUgzV0NCUEJITi4u&route=shorturl",
     };
     function trocarForm(tipo) {
       const iframe = document.getElementById('iframeForm');
       const tabs = document.querySelectorAll('.tab');
       tabs.forEach(t => t.classList.remove('active'));
       if (tipo === 'consumidor') { tabs[0].classList.add('active'); }
-      if (tipo === 'supermercado') { tabs[1].classList.add('active'); }
       iframe.src = urls[tipo] || "about:blank";
     }
-    // carrega padrão
     trocarForm('consumidor');
   </script>
 </body>
